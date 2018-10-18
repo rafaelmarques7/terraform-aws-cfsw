@@ -14,6 +14,6 @@ resource "null_resource" "upload_bucket" {
   depends_on = ["aws_s3_bucket.s3_bucket_website"]
 
   provisioner "local-exec" {
-    command = "aws s3 cp ${var.build_dir_name} s3://${aws_s3_bucket.s3_bucket_website.id} --recursive --profile=economist-ds-dev"
+    command = "aws s3 cp ${var.build_dir_name} s3://${aws_s3_bucket.s3_bucket_website.id} --recursive"
   }
 }
