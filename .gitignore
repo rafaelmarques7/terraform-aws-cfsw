@@ -1,0 +1,12 @@
+# ignore all terraform files and directories
+**/.terraform
+**.tfstate
+**.tfstate.*
+
+# ignore build folder
+**/build 
+**/build/*
+
+# ignote remote
+**/remote
+**/remote/* 
