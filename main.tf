@@ -1,9 +1,6 @@
 # Terraform backend - configuration
 terraform {
   backend "s3" {
-    bucket = "remote-state-bucket-1smjwi07nd"
-    key    = "state_terraform"
-    region = "us-east-1"
   }
 }
 

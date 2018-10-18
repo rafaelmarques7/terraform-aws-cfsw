@@ -78,6 +78,16 @@ terraform {
 }
 ```
 
+or  run 
+
+```
+terraform init \
+  -backend-config="bucket=$BUCKET_NAME"   \
+  -backend-config="key=state_terraform"  \
+  -backend-config="region=us-east-1"     \
+
+```
+
 ### **Note 3.1** - deployment command
 ```
 terraform apply \
